@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Reminders</title>
+    <link rel="stylesheet" href="to do.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List with Reminders</h1>
+        <div class="form-container">
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Enter task">
+                <select id="reminder-type">
+                    <option value="one-time">One-time</option>
+                    <option value="everyday">Everyday</option>
+                </select>
+                <input type="datetime-local" id="reminder-time">
+                <button type="button" onclick="addTask()">Add Task</button>
+            </form>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="to do.js"></script>
+</body>
+</html>
